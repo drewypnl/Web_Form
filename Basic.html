@@ -3,20 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>A Basic Form</title>
+    <style type="text/css">
+        .form-field  {
+            clear: both;
+            padding: 10px;
+            width: 350px;
+        }
+        .form-field label {
+            float: left;
+            width: 150px;
+            text-align: right;
+        }
+        .form-field input {
+            float: right;
+            width: 150px;
+            text-align: left;
+        }
+        #submit {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<h1>A Bassic Form</h1>
+<h1>A Basic Form</h1>
 <hr>
 <form action="#">
     <fieldset>
         <legend>Form Informtion</legend>
-        <div>
+        <div class="form-field">
             <label for="username">Name:</label>
-            <input id="username" type="text" name="username">
+            <input type="text" id="username" name="username">
         </div>
-        <div>
+        <div class="form-field">
             <label for="email">E-Mail Address</label>
-            <input id="email" type="text" name="email">
+            <input type="text" id="email" name="email">
+        </div>
+        <div class="form-field">
+            <input id="submit" type="submit" name="submit" value="Send Form">
         </div>
     </fieldset>
 </form>
